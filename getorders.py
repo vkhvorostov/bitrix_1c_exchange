@@ -1,15 +1,3 @@
-'''
-Код для запуска в битриксе:
-
-// Установить последнее время запроса списка заказов
-$newtime = strtotime('10.07.2023 00:00:00');
-\Bitrix\Main\Config\Option::set("sale", "last_export_time_committed_/bitrix/admin/1c_excha", $newtime);
-
-// Посмотреть последнее время запроса списка заказов
-$time =  \Bitrix\Main\Config\Option::get("sale", "last_export_time_committed_/bitrix/admin/1c_excha", "0");
-echo date('d.m.Y H:i:s', $time);
-'''
-
 import requests
 import sys
 
