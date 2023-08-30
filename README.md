@@ -16,3 +16,9 @@
     // Посмотреть последнее время запроса списка заказов
     $time =  \Bitrix\Main\Config\Option::get("sale", "last_export_time_committed_/bitrix/admin/1c_excha", "0");
     echo date('d.m.Y H:i:s', $time);
+
+## Отправка заказов из xml-файла в 1С-Битрикс
+
+`python3 sendorders.py <server_address> <username> <password> <version> <xml_file>`
+
+Для version также рекомендуется использовать значение 3.1
